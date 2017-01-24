@@ -1,7 +1,7 @@
 <?php
 $name='BabelStoneHan';
 $type='TTF';
-$desc=array (
+$arr_descriptors=array (
   'Ascent' => 996.0,
   'Descent' => -238.0,
   'CapHeight' => 678.0,
@@ -16,4 +16,3 @@ $flt_underline_thickness=49;
 $ttffile='../font/unifont/BabelStoneHan.ttf';
 $originalsize=25281048;
 $fontkey='babelstonehan';
-?>

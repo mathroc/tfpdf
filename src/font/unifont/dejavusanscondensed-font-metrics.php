@@ -1,7 +1,7 @@
 <?php
 $name='DejaVuSansCondensed';
 $type='TTF';
-$desc=array (
+$arr_descriptors=array (
   'Ascent' => 928.0,
   'Descent' => -236.0,
   'CapHeight' => 928.0,
@@ -16,4 +16,3 @@ $flt_underline_thickness=44;
 $ttffile='../font/unifont/DejaVuSansCondensed.ttf';
 $originalsize=643852;
 $fontkey='dejavusanscondensed';
-?>

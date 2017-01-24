@@ -22,12 +22,28 @@ class PDFGeneratedTest extends TestCase
         $pdfLibrary->Ln(10);
         $pdfLibrary->Write(5, "La taille de ce PDF n'est que de 12 ko.");
 
+        $pdfLibrary->SetFont('Courier', '', 14);
+        $pdfLibrary->Ln(10);
+        $pdfLibrary->Write(5, "Hello Courier World");
+        $pdfLibrary->SetFont('Courier', 'U', 14);
+        $pdfLibrary->Ln(10);
+        $pdfLibrary->Write(5, "Hello Underscored Courier World");
+
+        $pdfLibrary->Ln(10);
+
         $file = $pdfLibrary->output();
 
-        file_put_contents(__DIR__ . '/test_data/output.pdf', $file);
+        if (empty($file)) {
+            static::fail("Empty PDF library output");
+        }
 
-        if (!file_exists(__DIR__ . '/test_data/output.pdf')) {
-            static::fail();
+        $file_name = __DIR__ . '/test_data/output.pdf';
+
+        unlink($file_name);
+        file_put_contents($file_name, $file);
+
+        if (!file_exists($file_name)) {
+            static::fail("PDF {$file_name} file does not exist");
         }
     }
 }
