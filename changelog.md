@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 ### Fixes
+- PHPDoc fixes
+
+## [v2.0.6]
+
+### Fixes
 - Fixed unit test failing when using the default unifont files
 - Font descriptor data was not utilised properly
 
@@ -15,5 +20,6 @@ All notable changes to this project will be documented in this file.
 ### Fixes
 - "U" style did not actually underline the text.
 
-[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.0.5...HEAD
+[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.0.6...HEAD
+[v2.0.6]: https://github.com/DocnetUK/tfpdf/compare/v2.0.5...v2.0.6
 [v2.0.5]: https://github.com/DocnetUK/tfpdf/compare/v2.0.4...v2.0.5
