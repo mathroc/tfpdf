@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.0.7]
+
 ### Fixes
 - PHPDoc fixes
 
@@ -20,6 +22,7 @@ All notable changes to this project will be documented in this file.
 ### Fixes
 - "U" style did not actually underline the text.
 
-[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.0.6...HEAD
+[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.0.7...HEAD
+[v2.0.7]: https://github.com/DocnetUK/tfpdf/compare/v2.0.6...v2.0.7
 [v2.0.6]: https://github.com/DocnetUK/tfpdf/compare/v2.0.5...v2.0.6
 [v2.0.5]: https://github.com/DocnetUK/tfpdf/compare/v2.0.4...v2.0.5
