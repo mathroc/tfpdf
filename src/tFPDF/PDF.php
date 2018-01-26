@@ -1994,7 +1994,7 @@ class PDF
      * @param $str_text
      * @return mixed
      */
-    private function EscapeString($str_text)
+    protected function EscapeString($str_text)
     {
         // Escape special characters in strings
         $str_text = str_replace('\\', '\\\\', $str_text);
@@ -2008,7 +2008,7 @@ class PDF
      * @param $s
      * @return string
      */
-    private function TextString($s)
+    protected function TextString($s)
     {
         // Format a text string
         return '(' . $this->EscapeString($s) . ')';
@@ -2316,7 +2316,7 @@ class PDF
     /**
      * Creates a new object
      */
-    private function NewObject()
+    protected function NewObject()
     {
         $this->int_current_object++;
         $this->arr_offsets[$this->int_current_object] = strlen($this->str_buffer);
@@ -2326,7 +2326,7 @@ class PDF
     /**
      * @param $str_data
      */
-    private function PutStream($str_data)
+    protected function PutStream($str_data)
     {
         $this->Out('stream');
         $this->Out($str_data);
@@ -2336,7 +2336,7 @@ class PDF
     /**
      * @param $str_data
      */
-    private function Out($str_data)
+    protected function Out($str_data)
     {
         // Add a line to the document
         if ($this->int_state == self::DOCUMENT_STATE_CREATING) {
