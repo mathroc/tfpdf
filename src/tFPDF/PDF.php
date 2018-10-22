@@ -131,14 +131,14 @@ class PDF
     /**
      * Dimensions of current page in points
      *
-     * @var mixed
+     * @var float
      */
     protected $flt_width_points, $flt_height_points = 0.00;
 
     /**
      * Dimensions of current page in user units
      *
-     * @var mixed
+     * @var float
      */
     protected $flt_current_width, $flt_current_height = 0.00;
 
@@ -3103,6 +3103,26 @@ class PDF
                 $this->Error("Unable to create unifont directory in path {$this->str_font_write_path}");
             }
         }
+    }
+
+    /**
+     * Get current page width
+     *
+     * @return float
+     */
+    public function GetPageWidth()
+    {
+        return $this->flt_current_width;
+    }
+
+    /**
+     * Get current page height
+     *
+     * @return float
+     */
+    public function GetPageHeight()
+    {
+        return $this->flt_current_height;
     }
 
 }
