@@ -24,9 +24,14 @@ class PDFGeneratedTest extends TestCase
 
         $pdfLibrary->SetFont('Courier', '', 14);
         $pdfLibrary->Ln(10);
-        $pdfLibrary->Write(5, "Hello Courier World");
+        $pdfLibrary->SetTextColor(255, 0, 0);
+        $pdfLibrary->Write(5, "Hello Red Courier World");
+        $pdfLibrary->Ln(10);
+        $pdfLibrary->SetTextColor(50);
+        $pdfLibrary->Write(5, "Hello Gray Courier World");
         $pdfLibrary->SetFont('Courier', 'U', 14);
         $pdfLibrary->Ln(10);
+        $pdfLibrary->SetTextColor();
         $pdfLibrary->Write(5, "Hello Underscored Courier World");
 
         $pdfLibrary->Ln(10);
