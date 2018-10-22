@@ -3099,7 +3099,7 @@ class PDF
     public function configureFontWritePath($str_path)
     {
         if (!is_dir($this->str_font_write_path . $str_path)) {
-            if (!mkdir($this->str_font_write_path . $str_path)) {
+            if (!mkdir($this->str_font_write_path . $str_path, 0777, true)) {
                 $this->Error("Unable to create unifont directory in path {$this->str_font_write_path}");
             }
         }
