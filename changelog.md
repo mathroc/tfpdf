@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.2.0]
+
+### Added
+- GetPageWidth and GetPageHeight methods
+
+### Changed
+- Updates to SetTextColor, SetFillColor and SetDrawColor to support CMYK and (correctly) grayscale
+
 ## [v2.1.1]
 
 ### Changed
@@ -32,7 +40,8 @@ All notable changes to this project will be documented in this file.
 ### Fixes
 - "U" style did not actually underline the text.
 
-[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.1.1...HEAD
+[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.0...HEAD
+[v2.2.0]: https://github.com/DocnetUK/tfpdf/compare/v2.1.1...v2.2.0
 [v2.1.1]: https://github.com/DocnetUK/tfpdf/compare/v2.1.0...v2.1.1
 [v2.1.0]: https://github.com/DocnetUK/tfpdf/compare/v2.0.7...v2.1.0
 [v2.0.7]: https://github.com/DocnetUK/tfpdf/compare/v2.0.6...v2.0.7
