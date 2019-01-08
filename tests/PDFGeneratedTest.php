@@ -27,7 +27,7 @@ class PDFGeneratedTest extends TestCase
         $pdfLibrary->SetTextColor(255, 0, 0);
         $pdfLibrary->Write(5, "Hello Red Courier World");
         $pdfLibrary->Ln(10);
-        $pdfLibrary->SetTextColor(50);
+        $pdfLibrary->SetTextColor(122.5);
         $pdfLibrary->Write(5, "Hello Gray Courier World");
         $pdfLibrary->SetFont('Courier', 'U', 14);
         $pdfLibrary->Ln(10);
@@ -35,6 +35,22 @@ class PDFGeneratedTest extends TestCase
         $pdfLibrary->Write(5, "Hello Underscored Courier World");
 
         $pdfLibrary->Ln(10);
+
+        // Set draw color example
+        $pdfLibrary->SetLineWidth(2);
+        $pdfLibrary->SetDrawColor(122.5);
+        $pdfLibrary->Line(20, $pdfLibrary->GetY(), 200, $pdfLibrary->GetY());
+        $pdfLibrary->Ln(10);
+
+        // Set fill color example
+        $pdfLibrary->SetFillColor(122.5);
+        $pdfLibrary->Rect(20, $pdfLibrary->GetY(), 180, 20, 'F');
+        $pdfLibrary->Ln(30);
+
+        // Set text color example
+        $pdfLibrary->SetFont('Courier', '', 14);
+        $pdfLibrary->SetTextColor(122.5);
+        $pdfLibrary->Text(20, $pdfLibrary->GetY(), 'Test text');
 
         $file = $pdfLibrary->output();
 
