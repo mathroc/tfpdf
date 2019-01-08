@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.2.2]
+
+### Fixed
+- Using 0-255 grayscale scale, instead 0-100, which was changed since 2.2.0 
+
 ## [v2.2.1]
 
 ### Fixed
@@ -45,7 +50,8 @@ All notable changes to this project will be documented in this file.
 ### Fixes
 - "U" style did not actually underline the text.
 
-[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.1...HEAD
+[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.2...HEAD
+[v2.2.2]: https://github.com/DocnetUK/tfpdf/compare/v2.2.1...v2.2.2
 [v2.2.1]: https://github.com/DocnetUK/tfpdf/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/DocnetUK/tfpdf/compare/v2.1.1...v2.2.0
 [v2.1.1]: https://github.com/DocnetUK/tfpdf/compare/v2.1.0...v2.1.1
