@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.2.3]
+
+### Changed
+- Change PutPages() method visibility from private to protected
+
 ## [v2.2.2]
 
 ### Fixed
@@ -50,7 +55,8 @@ All notable changes to this project will be documented in this file.
 ### Fixes
 - "U" style did not actually underline the text.
 
-[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.2...HEAD
+[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.3...HEAD
+[v2.2.2]: https://github.com/DocnetUK/tfpdf/compare/v2.2.2...v2.2.3
 [v2.2.2]: https://github.com/DocnetUK/tfpdf/compare/v2.2.1...v2.2.2
 [v2.2.1]: https://github.com/DocnetUK/tfpdf/compare/v2.2.0...v2.2.1
 [v2.2.0]: https://github.com/DocnetUK/tfpdf/compare/v2.1.1...v2.2.0
