@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v2.2.5]
+
+### Changed
+- Change BeginPage() visibility
+
 ## [v2.2.4]
 
 ### Fixed
@@ -60,7 +65,8 @@ All notable changes to this project will be documented in this file.
 ### Fixes
 - "U" style did not actually underline the text.
 
-[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.4...HEAD
+[Unreleased]: https://github.com/DocnetUK/tfpdf/compare/v2.2.5...HEAD
+[v2.2.4]: https://github.com/DocnetUK/tfpdf/compare/v2.2.4...v2.2.5
 [v2.2.4]: https://github.com/DocnetUK/tfpdf/compare/v2.2.3...v2.2.4
 [v2.2.3]: https://github.com/DocnetUK/tfpdf/compare/v2.2.2...v2.2.3
 [v2.2.2]: https://github.com/DocnetUK/tfpdf/compare/v2.2.1...v2.2.2
