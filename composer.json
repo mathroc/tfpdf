@@ -4,7 +4,7 @@
   "keywords": ["pdf"],
   "homepage": "http://github.com/DocnetUK/tfpdf",
   "type": "library",
-  "license": "LGPL",
+  "license": "LGPL-3.0-only",
   "authors": [
     {
       "name": "David Wilcock",
