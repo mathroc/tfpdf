@@ -49,6 +49,7 @@ class TTFontFile
    private $defaultWidth;
    private $maxStrLenRead;
    private $TTCFonts;
+   private $version;
 
    public function __construct()
    {
